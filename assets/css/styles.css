@@ -1,0 +1,40 @@
+.navbar.navbar-expand-lg.bg-body-tertiary.fixed-top{
+    background-color: aquamarine !important;
+
+}
+i.fa-brands.fa-instagram.fa-xl,
+i.fa-brands.fa-facebook.fa-xl,
+i.fa-brands.fa-twitter.fa-xl,
+i.fa-solid.fa-user.fa-xl,
+i.fa-solid.fa-user-lock.fa-xl{
+color: #fff;
+}
+i.fa-brands.fa-instagram.fa-xl:hover{
+    color: blueviolet;
+}
+i.fa-brands.fa-facebook.fa-xl:hover{
+    color: blue;
+}
+i.fa-brands.fa-twitter.fa-xl:hover{
+    color: rgb(29, 130, 170);
+}
+i.fa-solid.fa-user-lock.fa-xl:hover{
+    color: rgb(24, 196, 139);  
+}
+i.fa-solid.fa-user.fa-xl:hover{
+    color: rgb(24, 196, 139);
+}
+.list-group{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent; 
+}
+section.sobre-mi{
+    margin-top: -10rem;
+}
+section.dashboard{
+    margin-top: 5rem;
+    color: rgb(46, 159, 173); 
+}
+button.nav-link{
+    display: block !important;
+}

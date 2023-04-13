@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/39e211a210.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"  href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- barra de navbar-->
+         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#">
+                     <img src="/assets/img/Diseño sin título (17).png" alt="" width="45%" height="...">
+                   </a>
+                   <ul class="list-group list-group-horizontal">
+                     <li class="list-group-item"><i class="fa-brands fa-instagram fa-xl"></i></li>
+                     <li class="list-group-item"><i class="fa-brands fa-facebook fa-xl"></i></li>
+                     <li class="list-group-item"><i class="fa-brands fa-twitter fa-xl"></i></li>
+                    <!-- Button trigger modal --> 
+                     <li class="list-group-item">
+                         <i class="fa-solid fa-user fa-xl"type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">
+                         </i></li> 
+                 </ul>
+            </div>
+           </nav>
+     </header>
+     <main>
+        <section id="dashboard" class="dashboard">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <!--saibar(barra de administracion)-->
+         <div class="col-2">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a href="/index.html" target="_blank"><button class="nav-link active" id="v-pills-home-tab" type="button">Home</button></a>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Perfil</button>
+                  <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-exp" aria-selected="false">Educacion</button>
+                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Trabajo</button>
+                  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Proyecto</button>
+                  <button class="nav-link" id="v-pills-hab-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hab" type="button" role="tab" aria-controls="v-pills-hab" aria-selected="false">Habilidades</button>
+                </div>
+                <!--<div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">1</div>
+                  <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-exp-tab" tabindex="0">2</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">3</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">4</div>
+                <div class="tab-pane fade" id="v-pills-hab" role="tabpanel" aria-labelledby="v-pills-hab-tab" tabindex="0">5</div>
+                </div>-->
+              </div>
+            </div>
+          <!--body-->
+          <div class="col-9 tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">  
+             <h4 class="text-center">Perfil</h4>
+             <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Foto</label>
+                    <input  class="form-control form-control-sm" id="formFileSm"type="file">
+                <button type="button" class="btn btn-light">Guardar</button>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <label for="formFileSm" class="form-label">Nombre y Apellido</label>
+                    <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                </div>
+                <button type="button" class="btn btn-light">Guardar</button>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <label for="formFileSm" class="form-label">Acerca de Mi</label>
+                    <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                </div>
+                <button type="button" class="btn btn-light">Guardar</button>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-exp-tab" tabindex="0">
+                <h4 class="text-center">Educacion</h4>
+                <div class="mb-3">
+                       <label for="formFileSm" class="form-label">Nombre del Colegio Secundario</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Titulo Secundario</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Nombre de la Universidad</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                <div class="row">
+                    <label for="formFileSm" class="form-label">Titulo Universitario</label>
+                    <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                </div>
+                <button type="button" class="btn btn-light">Guardar</button>
+            </div>
+               </div>
+               <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                <h4 class="text-center">Trabajo</h4>
+                <div class="mb-3">
+                       <label for="formFileSm" class="form-label">Nombre del Trabajo</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                <label for="formFileSm" class="form-label">Logo de la Empresa</label>
+                <input  class="form-control form-control-sm" id="formFileSm"type="file">
+            <button type="button" class="btn btn-light">Guardar</button>
+        </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Periodo que Trabajo</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Descripcion del Puesto</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               </div>
+               <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                <h4 class="text-center">Proyecto</h4>
+                <div class="mb-3">
+                       <label for="formFileSm" class="form-label">Nombre del Proyecto</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Fecha de Iniciacion</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Descripcion del Proyecto</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                <div class="row">
+                    <label for="formFileSm" class="form-label">Foto del Proyecto</label>
+                    <input  class="form-control form-control-sm" id="formFileSm"type="file">
+                </div>
+                <button type="button" class="btn btn-light">Guardar</button>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <label for="formFileSm" class="form-label">link del Proyecto</label>
+                    <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                </div>
+                <button type="button" class="btn btn-light">Guardar</button>
+            </div>
+               </div>
+               <div class="tab-pane fade" id="v-pills-hab" role="tabpanel" aria-labelledby="v-pills-hab-tab" tabindex="0">
+                <h4 class="text-center">Habilidades</h4>
+                <div class="mb-3">
+                       <label for="formFileSm" class="form-label">Gestion de Equipo</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Capacidades</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               <div class="mb-3">
+                   <div class="row">
+                       <label for="formFileSm" class="form-label">Herramientas que sepas manejar</label>
+                       <input  class="form-control form-control-sm" id="formFileSm"type="text">
+                   </div>
+                   <button type="button" class="btn btn-light">Guardar</button>
+               </div>
+               </div>
+        </div>
+    </section> 
+    </main> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>   
+</body>
+</html>
